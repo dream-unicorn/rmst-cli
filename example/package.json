@@ -1,0 +1,12 @@
+{
+  "name": "try",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "rmst-cli start"
+  },
+  "devDependencies": {
+    "rmst-cli": "^0.0.2"
+  }
+}

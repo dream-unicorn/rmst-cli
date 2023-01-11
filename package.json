@@ -1,6 +1,6 @@
 {
   "name": "rmst-cli",
-  "version": "0.0.0",
+  "version": "0.0.2",
   "description": "人美声甜的cli",
   "author": "人美声甜",
   "bin": {
@@ -45,7 +45,8 @@
     "@oclif/plugin-help": "^5",
     "@oclif/plugin-plugins": "^2.1.12",
     "webpack": "^5.75.0",
-    "webpack-dev-server": "^4.11.1"
+    "webpack-dev-server": "^4.11.1",
+    "html-webpack-plugin": "^5.5.0"
   },
   "devDependencies": {
     "@oclif/test": "^2.2.19",
@@ -53,7 +54,6 @@
     "@types/mocha": "^9.0.0",
     "@types/node": "^16.18.11",
     "chai": "^4",
-    "html-webpack-plugin": "^5.5.0",
     "mocha": "^9",
     "oclif": "^3",
     "onchange": "^7.1.0",

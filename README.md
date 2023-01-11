@@ -22,7 +22,7 @@ $ npm install -g rmst-cli
 $ rmst-cli COMMAND
 running command...
 $ rmst-cli (--version)
-rmst-cli/0.0.0 win32-x64 node-v16.14.0
+rmst-cli/0.0.2 win32-x64 node-v16.14.0
 $ rmst-cli --help [COMMAND]
 USAGE
   $ rmst-cli COMMAND
@@ -43,6 +43,7 @@ USAGE
 * [`rmst-cli plugins:uninstall PLUGIN...`](#rmst-cli-pluginsuninstall-plugin-1)
 * [`rmst-cli plugins:uninstall PLUGIN...`](#rmst-cli-pluginsuninstall-plugin-2)
 * [`rmst-cli plugins update`](#rmst-cli-plugins-update)
+* [`rmst-cli start`](#rmst-cli-start)
 
 ## `rmst-cli help [COMMAND]`
 
@@ -293,4 +294,22 @@ FLAGS
 DESCRIPTION
   Update installed plugins.
 ```
+
+## `rmst-cli start`
+
+Say helloqweert 二二
+
+```
+USAGE
+  $ rmst-cli start
+
+DESCRIPTION
+  Say helloqweert 二二
+
+EXAMPLES
+  $ rmst-cli start
+  hello world! (./src/commands/hello/world.ts)
+```
+
+_See code: [dist/commands/start.ts](https://github.com/%E6%A1%8C%E9%9D%A2/hello-world/blob/v0.0.2/dist/commands/start.ts)_
 <!-- commandsstop -->
