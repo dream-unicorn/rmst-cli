@@ -1,10 +1,10 @@
 {
-  "name": "rmst-cli",
-  "version": "0.0.0",
+  "name": "rmstmd-cli",
+  "version": "0.0.1",
   "description": "人美声甜的cli",
   "author": "人美声甜",
   "bin": {
-    "rmst-cli": "./bin/run"
+    "rmstmd-cli": "./bin/run"
   },
   "scripts": {
     "build": "shx rm -rf dist && tsc -b",
@@ -15,8 +15,8 @@
     "onchange": "onchange  \"src/**/*.ts\" -- npm run prepack"
   },
   "oclif": {
-    "bin": "rmst-cli",
-    "dirname": "rmst-cli",
+    "bin": "rmstmd-cli",
+    "dirname": "rmstmd-cli",
     "commands": "./dist/commands",
     "plugins": [
       "@oclif/plugin-help",
@@ -25,7 +25,7 @@
     "topicSeparator": " ",
     "topics": {
       "hello": {
-        "description": "Say hello to the world and others"
+        "description": "Sers"
       }
     }
   },
@@ -36,7 +36,8 @@
     "/bin",
     "/dist",
     "/npm-shrinkwrap.json",
-    "/oclif.manifest.json"
+    "/oclif.manifest.json",
+    "/template"
   ],
   "dependencies": {
     "@oclif/core": "^1.23.0",

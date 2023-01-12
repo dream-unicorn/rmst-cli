@@ -4,10 +4,10 @@
   "main": "index.js",
   "license": "",
   "scripts": {
-    "start": "rmst-cli start",
-    "rmst-cli": "npx --ignore-existing rmst-cli"
+    "start": "rmstmd-cli start",
+    "init": "rmstmd-cli init"
   },
   "devDependencies": {
-    "rmst-cli": "@latest"
+    "rmstmd-cli": "^0.0.1"
   }
 }
