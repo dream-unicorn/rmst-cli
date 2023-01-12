@@ -2080,10 +2080,10 @@ rimraf@^3.0.2:
   dependencies:
     glob "^7.1.3"
 
-rmst-cli@^0.0.2:
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/rmst-cli/-/rmst-cli-0.0.2.tgz#5ad7995e3a8046e05b90e48dcb24cb395c05bead"
-  integrity sha512-MIEDAe3vTfA/3eW2AtsMc59BLU/QuVGFN/WOIbE5WKY2TVh0L9Kaq7iwIXDxlGOEyw53RS0ZL4VxzF5IF4oqqQ==
+rmst-cli@@latest:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/rmst-cli/-/rmst-cli-0.0.3.tgz#a7784412d1d4bfd1918e5e2bd18a4edd0a81fb4b"
+  integrity sha512-j7+7qQ4wshCSUwomCn89fjU+WhSBkjh8qeKebscrm1yuJ5VZ1ENoJZtodOCeG0a6d3P3vPVSr23XYU37cSwWQA==
   dependencies:
     "@oclif/core" "^1.23.0"
     "@oclif/plugin-help" "^5"

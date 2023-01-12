@@ -1,6 +1,6 @@
 {
   "name": "rmst-cli",
-  "version": "0.0.2",
+  "version": "0.0.0",
   "description": "人美声甜的cli",
   "author": "人美声甜",
   "bin": {
@@ -11,7 +11,6 @@
     "postpack": "shx rm -f oclif.manifest.json",
     "posttest": "yarn lint",
     "prepack": "yarn build && oclif manifest && oclif readme",
-    "test": "mocha --forbid-only \"test/**/*.test.ts\"",
     "version": "oclif readme && git add README.md",
     "onchange": "onchange  \"src/**/*.ts\" -- npm run prepack"
   },
@@ -43,17 +42,15 @@
     "@oclif/core": "^1.23.0",
     "@oclif/plugin-help": "^5",
     "@oclif/plugin-plugins": "^2.1.12",
+    "html-webpack-plugin": "^5.5.0",
     "webpack": "^5.75.0",
-    "webpack-dev-server": "^4.11.1",
-    "html-webpack-plugin": "^5.5.0"
+    "webpack-dev-server": "^4.11.1"
   },
   "devDependencies": {
-    "@oclif/test": "^2.2.19",
-    "@types/chai": "^4",
-    "@types/mocha": "^9.0.0",
+    "@oclif/command": "^1",
+    "@types/fs-extra": "^11.0.1",
     "@types/node": "^16.18.11",
-    "chai": "^4",
-    "mocha": "^9",
+    "fs-extra": "^11.1.0",
     "oclif": "^3",
     "onchange": "^7.1.0",
     "shx": "^0.3.3",

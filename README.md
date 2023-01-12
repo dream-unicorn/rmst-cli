@@ -22,7 +22,7 @@ $ npm install -g rmst-cli
 $ rmst-cli COMMAND
 running command...
 $ rmst-cli (--version)
-rmst-cli/0.0.2 win32-x64 node-v16.14.0
+rmst-cli/0.0.0 win32-x64 node-v16.14.0
 $ rmst-cli --help [COMMAND]
 USAGE
   $ rmst-cli COMMAND
@@ -34,6 +34,7 @@ USAGE
 
 <!-- commands -->
 * [`rmst-cli help [COMMAND]`](#rmst-cli-help-command)
+* [`rmst-cli init`](#rmst-cli-init)
 * [`rmst-cli plugins`](#rmst-cli-plugins)
 * [`rmst-cli plugins:install PLUGIN...`](#rmst-cli-pluginsinstall-plugin)
 * [`rmst-cli plugins:inspect PLUGIN...`](#rmst-cli-pluginsinspect-plugin)
@@ -64,6 +65,20 @@ DESCRIPTION
 ```
 
 _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v5.1.22/src/commands/help.ts)_
+
+## `rmst-cli init`
+
+Init
+
+```
+USAGE
+  $ rmst-cli init
+
+DESCRIPTION
+  Init
+```
+
+_See code: [dist/commands/init.ts](https://github.com/%E6%A1%8C%E9%9D%A2/hello-world/blob/v0.0.0/dist/commands/init.ts)_
 
 ## `rmst-cli plugins`
 
@@ -311,5 +326,5 @@ EXAMPLES
   hello world! (./src/commands/hello/world.ts)
 ```
 
-_See code: [dist/commands/start.ts](https://github.com/%E6%A1%8C%E9%9D%A2/hello-world/blob/v0.0.2/dist/commands/start.ts)_
+_See code: [dist/commands/start.ts](https://github.com/%E6%A1%8C%E9%9D%A2/hello-world/blob/v0.0.0/dist/commands/start.ts)_
 <!-- commandsstop -->

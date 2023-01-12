@@ -2,11 +2,12 @@
   "name": "try",
   "version": "1.0.0",
   "main": "index.js",
-  "license": "MIT",
+  "license": "",
   "scripts": {
-    "start": "rmst-cli start"
+    "start": "rmst-cli start",
+    "rmst-cli": "npx --ignore-existing rmst-cli"
   },
   "devDependencies": {
-    "rmst-cli": "^0.0.2"
+    "rmst-cli": "@latest"
   }
 }

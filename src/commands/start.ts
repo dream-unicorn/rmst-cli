@@ -18,6 +18,7 @@ hello world! (./src/commands/hello/world.ts)
   static args = []
 
   async run(): Promise<void> {
+    console.log(123456)
     const webpackConfig = getWebpackConfig()
     const compiler = webpack(webpackConfig)
     const server = new WebpackDevServer({ port: 3088 }, compiler)
