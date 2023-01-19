@@ -8,7 +8,8 @@
   },
   "scripts": {
     "publish-npm": "git add . && git commit -m '发布到npm'",
-    "pp": "npm version patch && npm run publish"
+    "patch": "npm version patch",
+    "publish-s": "npm publish"
   },
   "dependencies": {
     "html-webpack-plugin": "^5.5.0",
