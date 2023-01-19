@@ -1,14 +1,14 @@
 {
   "name": "rmst-cli",
-  "version": "1.1.11",
+  "version": "1.1.10",
   "main": "index.js",
   "license": "MIT",
   "bin": {
     "rmst-cli": "./bin/index.js"
   },
   "scripts": {
-    "commit": "git add .",
-    "patch": "npm version patch -m '发布到npm%s'",
+    "commit": "git add . && git commit -m '测试发布'",
+    "patch": "npm version patch -m '发布到npm%s' --git-tag-version false",
     "publish-s": "npm publish",
     "git-push": "git push"
   },
