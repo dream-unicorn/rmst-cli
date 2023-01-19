@@ -16,5 +16,5 @@ module.exports = projectName => {
   templatePackageJson.name = projectName
   fse.writeJSONSync(destPath + '/package.json', templatePackageJson, { spaces: 2 })
 
-  console.log('初始化完成 123')
+  console.log('初始化完成 123456')
 }
