@@ -1,8 +1,7 @@
-import * as path from 'path'
-import * as webpack from 'webpack'
+const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
-export const getWebpackConfig = (): webpack.Configuration => {
+module.exports = () => {
   const entry = `${process.cwd()}/src/index.js`
 
   return {

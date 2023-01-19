@@ -1,66 +1,20 @@
 {
-  "name": "rmstmd-cli",
-  "version": "0.0.1",
-  "description": "人美声甜的cli",
-  "author": "人美声甜",
+  "name": "rmst-cli",
+  "version": "1.1.1",
+  "main": "index.js",
+  "license": "MIT",
   "bin": {
-    "rmstmd-cli": "./bin/run"
+    "rmst-cli": "./bin/index.js"
   },
-  "scripts": {
-    "build": "shx rm -rf dist && tsc -b",
-    "postpack": "shx rm -f oclif.manifest.json",
-    "posttest": "yarn lint",
-    "prepack": "yarn build && oclif manifest && oclif readme",
-    "version": "oclif readme && git add README.md",
-    "onchange": "onchange  \"src/**/*.ts\" -- npm run prepack"
-  },
-  "oclif": {
-    "bin": "rmstmd-cli",
-    "dirname": "rmstmd-cli",
-    "commands": "./dist/commands",
-    "plugins": [
-      "@oclif/plugin-help",
-      "@oclif/plugin-plugins"
-    ],
-    "topicSeparator": " ",
-    "topics": {
-      "hello": {
-        "description": "Sers"
-      }
-    }
-  },
-  "homepage": "",
-  "main": "dist/index.js",
-  "repository": "桌面/hello-world",
-  "files": [
-    "/bin",
-    "/dist",
-    "/npm-shrinkwrap.json",
-    "/oclif.manifest.json",
-    "/template"
-  ],
   "dependencies": {
-    "@oclif/core": "^1.23.0",
-    "@oclif/plugin-help": "^5",
-    "@oclif/plugin-plugins": "^2.1.12",
+    "fs-extra": "^11.1.0",
     "html-webpack-plugin": "^5.5.0",
     "webpack": "^5.75.0",
     "webpack-dev-server": "^4.11.1"
   },
   "devDependencies": {
-    "@oclif/command": "^1",
     "@types/fs-extra": "^11.0.1",
     "@types/node": "^16.18.11",
-    "fs-extra": "^11.1.0",
-    "oclif": "^3",
-    "onchange": "^7.1.0",
-    "shx": "^0.3.3",
-    "ts-node": "^10.9.1",
-    "tslib": "^2.4.1",
-    "typescript": "^4.9.4"
-  },
-  "engines": {
-    "node": ">=12.0.0"
-  },
-  "types": "dist/index.d.ts"
+    "commander": "^10.0.0"
+  }
 }

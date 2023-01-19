@@ -5,6 +5,6 @@
     "start": "rmst-cli start"
   },
   "devDependencies": {
-    "rmst-cli": "^0.0.2"
+    "rmst-cli": "^0.0.0"
   }
 }
