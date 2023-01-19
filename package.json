@@ -7,7 +7,7 @@
     "rmst-cli": "./bin/index.js"
   },
   "scripts": {
-    "publish": "git add . && git commit -m '发布到npm' && npm version patch && npm publish"
+    "publish-npm": "git add . && git commit -m '发布到npm' && npm version patch && npm publish"
   },
   "dependencies": {
     "html-webpack-plugin": "^5.5.0",
