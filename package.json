@@ -7,7 +7,7 @@
     "rmst-cli": "./bin/index.js"
   },
   "scripts": {
-    "publish-npm": "git add . && git commit -m '发布到npm'",
+    "commit": "git add . && git commit -m '发布到npm'",
     "patch": "npm version patch",
     "publish-s": "npm publish"
   },
