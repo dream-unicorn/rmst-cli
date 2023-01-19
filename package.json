@@ -1,13 +1,13 @@
 {
   "name": "rmst-cli",
-  "version": "1.1.15",
+  "version": "1.1.17",
   "main": "index.js",
   "license": "MIT",
   "bin": {
     "rmst-cli": "./bin/index.js"
   },
   "scripts": {
-    "npm-version": "npm version patch -m '发布到-npm%s' --commit-hooks false --git-tag-version false",
+    "npm-version": "npm version patch --git-tag-version false",
     "npm-publish": "npm publish",
     "version-publish": "npm-run-all npm-version npm-publish"
   },
