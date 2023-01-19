@@ -14,8 +14,6 @@ program
   .description('init 项目')
   .argument('<string>', 'string to split')
   .action(projectName => {
-    console.log(projectName)
-
     init(projectName)
   })
 
