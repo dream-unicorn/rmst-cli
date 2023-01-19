@@ -2,8 +2,8 @@
 
 const { Command } = require('commander')
 
-const init = require('../commands/init')
-const start = require('../commands/start')
+const init = require('../src/commands/init')
+const start = require('../src/commands/start')
 
 const program = new Command()
 

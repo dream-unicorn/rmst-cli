@@ -7,7 +7,7 @@ module.exports = projectName => {
 
   fse.copySync(templatePath, destPath)
 
-  const rmstCliPackageJson = fse.readJsonSync(path.resolve(__dirname, '../package.json'))
+  const rmstCliPackageJson = fse.readJsonSync(path.resolve(__dirname, '../../package.json'))
   const templatePackageJson = fse.readJsonSync(path.resolve(templatePath, 'package.json'))
 
   console.log('rmstCliPackageJson.version: ', rmstCliPackageJson.version)
