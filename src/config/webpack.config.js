@@ -1,8 +1,11 @@
 import path from 'path'
 import HtmlWebpackPlugin from 'html-webpack-plugin'
+import dirFilename from '../utils/dirFilename.js'
 
 export default () => {
   const entry = `${process.cwd()}/src/index.js`
+
+  const { __dirname } = dirFilename()
 
   return {
     entry,
