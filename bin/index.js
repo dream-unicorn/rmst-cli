@@ -1,9 +1,9 @@
 #!/usr/bin/env node
 
-const { Command } = require('commander')
+import { Command } from 'commander'
 
-const init = require('../src/commands/init')
-const start = require('../src/commands/start')
+import init from '../src/commands/init.js'
+import start from '../src/commands/start.js'
 
 const program = new Command()
 

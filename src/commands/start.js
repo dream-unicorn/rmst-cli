@@ -1,10 +1,9 @@
-const { webpack } = require('webpack')
-const getWebpackConfig = require('../config/webpack.config')
+import webpack from 'webpack'
+import getWebpackConfig from '../config/webpack.config.js'
 
-const WebpackDevServer = require('webpack-dev-server')
-const path = require('path')
+import WebpackDevServer from 'webpack-dev-server'
 
-module.exports = () => {
+export default () => {
   const webpackConfig = getWebpackConfig()
   const compiler = webpack(webpackConfig)
   const server = new WebpackDevServer({ port: 3088 }, compiler)
