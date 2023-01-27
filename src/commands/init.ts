@@ -1,11 +1,11 @@
 import path from 'path'
-import * as fse from 'fs-extra/esm'
+import fse from 'fs-extra'
 import dirFilename from '../utils/dirFilename.js'
 
 export default projectName => {
   const { __dirname } = dirFilename()
 
-  const templatePath = path.resolve(__dirname, '../template')
+  const templatePath = path.resolve(__dirname, '../../template')
   const destPath = path.resolve(process.cwd(), projectName)
 
   fse.copySync(templatePath, destPath)

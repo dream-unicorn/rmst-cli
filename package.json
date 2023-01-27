@@ -1,6 +1,6 @@
 {
   "name": "rmst-cli",
-  "version": "1.1.24",
+  "version": "1.1.25",
   "main": "index.js",
   "license": "MIT",
   "bin": {
@@ -9,7 +9,8 @@
   "scripts": {
     "npm-version": "npm version patch --git-tag-version false",
     "npm-publish": "npm publish",
-    "version-publish": "npm-run-all npm-version npm-publish"
+    "version-publish": "npm-run-all npm-version npm-publish",
+    "tsc": "tsc"
   },
   "dependencies": {
     "fs-extra": "^11.1.0",
@@ -20,11 +21,20 @@
   "devDependencies": {
     "@types/fs-extra": "^11.0.1",
     "@types/node": "^16.18.11",
+    "chokidar": "^3.5.3",
     "commander": "^10.0.0",
-    "npm-run-all": "^4.1.5"
+    "memfs": "^3.4.13",
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^4.1.2",
+    "typescript": "^4.9.4"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org"
   },
+  "files": [
+    "bin/",
+    "dist/",
+    "template/"
+  ],
   "type": "module"
 }

@@ -2,12 +2,15 @@
 
 import { Command } from 'commander'
 
-import init from '../src/commands/init.js'
-import start from '../src/commands/start.js'
+import init from '../dist/commands/init.js'
+import start from '../dist/commands/start.js'
 
 const program = new Command()
 
 program.name('rmst-cli').version('0.8.0')
+
+// const TARGET = process.env.npm_lifecycle_event
+// console.log(TARGET)
 
 program
   .command('init')
@@ -15,6 +18,7 @@ program
   .argument('<string>', 'string to split')
   .action(projectName => {
     init(projectName)
+    // console.log(projectName)
   })
 
 program
