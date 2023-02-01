@@ -26,6 +26,9 @@ export default (): webpack.Configuration => {
     resolve: {
       extensions: ['.tsx', '.ts', '.js', '.jsx']
     },
-    stats: 'errors-only'
+    stats: 'errors-warnings',
+    infrastructureLogging: {
+      level: 'none'
+    }
   }
 }
