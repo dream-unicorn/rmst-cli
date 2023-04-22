@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 import { Command } from 'commander'
+import path from 'path'
 
 import init from '../dist/commands/init.js'
 import start from '../dist/commands/start.js'
@@ -18,7 +19,8 @@ program
   .argument('<string>', 'string to split')
   .action(projectName => {
     init(projectName)
-    // console.log(projectName)
+
+    console.log(projectName)
   })
 
 program
