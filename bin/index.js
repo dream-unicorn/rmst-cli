@@ -13,21 +13,29 @@ program.name('rmst-cli').version('0.8.0')
 // const TARGET = process.env.npm_lifecycle_event
 // console.log(TARGET)
 
-program
-  .command('init')
-  .description('init 项目')
-  .argument('<string>', 'string to split')
-  .action(projectName => {
-    init(projectName)
+console.log(process.argv)
 
-    console.log(projectName)
-  })
+const [, , command] = process.argv
 
-program
-  .command('start')
-  .description('启动项目')
-  .action(() => {
-    start()
-  })
+if (command === 'start') {
+  start()
+}
 
-program.parse()
+// program
+//   .command('init')
+//   .description('init 项目')
+//   .argument('<string>', 'string to split')
+//   .action(projectName => {
+//     init(projectName)
+
+//     console.log(projectName)
+//   })
+
+// program
+//   .command('start')
+//   .description('启动项目')
+//   .action(() => {
+//     start()
+//   })
+
+// program.parse()

@@ -22,7 +22,6 @@ export default function webpackConfig(): webpack.Configuration {
     ],
 
     mode: 'development',
-    watch: true,
     devtool: 'source-map',
     resolve: {
       extensions: ['.tsx', '.ts', '.js', '.jsx']
@@ -36,7 +35,7 @@ export default function webpackConfig(): webpack.Configuration {
       rules: [
         {
           test: /\.tsx?$/,
-          use: 'babel-loader',
+          loader: 'babel-loader',
           options: {
             presets: ['@babel/preset-env']
           },
