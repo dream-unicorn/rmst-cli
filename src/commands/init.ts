@@ -1,8 +1,11 @@
 import path from 'path'
 import fse from 'fs-extra'
+
 import dirFilename from '../utils/dirFilename.js'
 
-export default projectName => {
+export default function init(projectName: string) {
+  console.log('--初始化项目 ' + projectName)
+
   const { __dirname } = dirFilename()
 
   const templatePath = path.resolve(__dirname, '../../template')
